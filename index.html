@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Omais Ahmed</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('_gICZbeyFCiOD47uR');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+        var tempParams = {
+        contact_name : document.getElementById('contact-name'),
+        contact_phone : document.getElementById('contact-phone'),
+        contact_email : document.getElementById('contact-email'),
+        contact_subject : document.getElementById('subject'),
+        contact_message : document.getElementById('contact-message')
+    };
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_lji0jfd', 'template_6un774i', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        window.location = window.location.host;
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+</head>
+
+<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
+
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Left -->
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="primary-menu nav nav-pills">
+                            <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#testimonials">Testimonials</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">blog</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li> -->
+                        </ul>
+                        <!-- End Mainmanu Nav -->
+                    </nav>
+                    <!-- Start Header Right  -->
+                    <div class="header-right">
+                        <a class="rn-btn" href="#contacts"><span>Contact Me</span></a>
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                            <i data-feather="x"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <!-- End Header Right  -->
+
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo" href="index.html">
+                        <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                    </div>
+                </div>
+                <p class="discription">Inbio is a personal portfolio template. You can customize all.</p>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills">
+                    <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#testimonials">Testimonials</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">blog</a></li> -->
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
+                </ul>
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <span class="title">find with me</span>
+                    <ul class="social-share d-flex liststyle">
+                        <li class="facebook"><a href="https://www.facebook.com/omais.ahmed.52/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg></a>
+                        </li>
+                        <li class="instagram"><a href="https://www.instagram.com/om_brogrammer/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
+                        </li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/omais-ahmed-679a0b144/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+
+
+
+    <main class="main-page-wrapper">
+
+        <!-- Start Slider Area -->
+        <div id="home" class="rn-slider-area">
+            <div class="slide slider-style-1">
+                <div class="container">
+                    <div class="row row--30 align-items-center">
+                        <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
+                            <div class="content">
+                                <div class="inner">
+                                    <span class="subtitle">Welcome to my portfolio</span>
+                                    <h1 class="title">Hi, I’m <span>Omais</span><br>
+                                        <span class="header-caption" id="page-top">
+                                            <!-- type headline start-->
+                                            <span class="cd-headline clip is-full-width">
+                                                <span>a </span>
+                                        <!-- ROTATING TEXT -->
+                                        <span class="cd-words-wrapper">
+                                                    <b class="is-visible">Developer.</b>
+                                                    <b class="is-hidden">Software Engineer.</b>
+                                                    <b class="is-hidden">Professional Coder.</b>
+                                                    
+                                                </span>
+                                        </span>
+                                        <!-- type headline end -->
+                                        </span>
+                                    </h1>
+
+                                    <div>
+                                        <p class="description">Expert software engineer with diverse work of experience, including programming, software development, and consulting. Extensive knowledge of software development cycle as well as proficiency in several programming languages.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                                        <div class="social-share-inner-left">
+                                            <span class="title">find with me</span>
+                                            <ul class="social-share d-flex liststyle">
+                                                <li class="facebook"><a href="https://www.facebook.com/omais.ahmed.52/"><i data-feather="facebook"></i></a>
+                                                </li>
+                                                <li class="instagram"><a href="https://www.instagram.com/om_brogrammer/"><i data-feather="instagram"></i></a>
+                                                </li>
+                                                <li class="linkedin"><a href="https://www.linkedin.com/in/omais-ahmed-679a0b144/"><i data-feather="linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                                        <div class="skill-share-inner">
+                                            <span class="title">best skill on</span>
+                                            <ul class="skill-share d-flex liststyle">
+                                                <li><img src="assets/images/icons/icons-01.png" alt="Icons Images"></li>
+                                                <li><img src="assets/images/icons/icons-02.png" alt="Icons Images"></li>
+                                                <li><img src="assets/images/icons/icons-03.png" alt="Icons Images"></li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-1 order-lg-2 col-lg-5">
+                            <div class="thumbnail">
+                                <div class="inner">
+                                    <img src="assets/images/slider/banner-01.png" alt="Personal Portfolio Images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slider Area -->
+
+        <!-- Start Service Area -->
+        <div class="rn-service-area rn-section-gap section-separator" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                            <span class="subtitle">Services</span>
+                            <h2 class="title">What I Do</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--25 mt_md--10 mt_sm--10">
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <img src="assets/images/icons/web-designing.png" class="img-responsive" />
+                                    <!-- <i data-feather="menu"></i> -->
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Front-End Development</a></h4>
+                                    <p class="description">Cutting edge, completely custom websites built from scratch. Bespoke and unique. No templates</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <img src="assets/images/icons/web-development.png" class="img-responsive" />
+                                    <!-- <i data-feather="book-open"></i> -->
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Back-End Development</a></h4>
+                                    <p class="description"> From Corporate website development, Ecommerce, custom Web applications and product configurators my code is intelligent.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <img src="assets/images/icons/github.png" class="img-responsive" />
+                                    <!-- <i data-feather="tv"></i> -->
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Open Source - Github</a></h4>
+                                    <p class="description">Working as open source contributor on Github with many projects and numerous forks on various projects liked and shared by other developers.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="twitch"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Mobile App</a></h4>
+                                    <p class="description">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority.
+                                    </p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div> -->
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="wifi"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">CEO Marketing</a></h4>
+                                    <p class="description">always free from repetition,
+                                        injected humour, or non-characteristic words etc.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div> -->
+                    <!-- End SIngle Service -->
+                    <!-- Start Single Service -->
+                    <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="slack"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Personal Portfolio April</a></h4>
+                                    <p class="description"> It uses a dictionary of over 200 Latin words, combined with
+                                        a handful of model sentence.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div> -->
+                    <!-- End SIngle Service -->
+
+                </div>
+            </div>
+        </div>
+        <!-- End Service Area  -->
+
+        <!-- Start Portfolio Area -->
+        <div class="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Visit my portfolio</span>
+                            <h2 class="title">My Portfolio</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="https://www.amzonestep.com/">
+                                        <img src="assets/images/portfolio/amzonestep.png" alt="Omais Ahmed - Portfolio">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="https://www.amzonestep.com/">Laravel</a>
+                                        </div>
+                                        <!-- <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                600</span>
+                                        </div> -->
+                                    </div>
+                                    <h4 class="title"><a href="https://www.amzonestep.com/">AMZ One Step <i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="https://ironchestmaster.com/">
+                                        <img src="assets/images/portfolio/ironchestmaster.PNG" alt="Omais Ahmed - Portfolio">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="https://ironchestmaster.com/">Shopify</a>
+                                        </div>
+                                        <!-- <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                750</span>
+                                        </div> -->
+                                    </div>
+                                    <h4 class="title"><a href="https://ironchestmaster.com/">Iron Chest Master<i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="http://eliteshop.epizy.com/">
+                                        <img src="assets/images/portfolio/eliteshop.PNG" alt="Omais Ahmed - Portfolio">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="http://eliteshop.epizy.com/">PHP</a>
+                                        </div>
+                                        <!-- <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                630</span>
+                                        </div> -->
+                                    </div>
+                                    <h4 class="title"><a href="http://eliteshop.epizy.com/">Eliteshop
+                                            <i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="https://purensm.com/">
+                                        <img src="assets/images/portfolio/purensm.PNG" alt="Omais Ahmed - Portfolio">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="https://purensm.com/">Wordpress</a>
+                                        </div>
+                                        <!-- <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                360</span>
+                                        </div> -->
+                                    </div>
+                                    <h4 class="title"><a href="https://purensm.com/">PureNSM
+                                        <i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="https://energyseating.com/">
+                                        <img src="assets/images/portfolio/energyseating.png" alt="Omais Ahmed - Portfolio">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="https://energyseating.com/">Shopify</a>
+                                        </div>
+                                        <!-- <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                280</span>
+                                        </div> -->
+                                    </div>
+                                    <h4 class="title"><a href="https://energyseating.com/">Energy Seating<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="https://raynorgaming.com/">
+                                        <img src="assets/images/portfolio/raynorgaming.PNG" alt="Omais Ahmed - Portfolio">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="https://raynorgaming.com/">Wordpress</a>
+                                        </div>
+                                        <!-- <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                690</span>
+                                        </div> -->
+                                    </div>
+                                    <h4 class="title"><a href="https://raynorgaming.com/">Raynor Gaming<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+                </div>
+            </div>
+        </div>
+        <!-- End portfolio Area -->
+
+        <!-- Start Resume Area -->
+        <div class="rn-resume-area rn-section-gap section-separator" id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">2+ Years of Experience</span>
+                            <h2 class="title">My Resume</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--45">
+                    <div class="col-lg-12">
+                        <ul class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="interview-tab" data-toggle="tab" href="#certifications" role="tab" aria-controls="interview" aria-selected="false">certifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">professional
+                                    Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">experience</a>
+                            </li>
+                           
+                        </ul>
+                        <!-- Start Tab Content Wrapper  -->
+                        <div class="rn-nav-content tab-content" id="myTabContents">
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2012 - 2020</span>
+                                                <h4 class="maintitle">Education Quality</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Benazir Bhutto Shaheed University Karachi</h4>
+                                                                    <span>Bachelors in Computer Science</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2020</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">The education should be very
+                                                                interactual. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4> White House English School Karachi</h4>
+                                                                    <span>Matriculation(Computer Science)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2014</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Maecenas finibus nec sem ut
+                                                                imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                        <!-- Start Skill List Area 2nd  -->
+                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                            <div class="content">
+                                                <span class="subtitle" style="color: #212529;">2007 - 2010</span>
+                                                <h4 class="maintitle" style="color: #212529;">Job Experience</h4>
+                                                <div class="experience-list experience-list-mob">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Government Superior Science College Karachi</h4>
+                                                                    <span>Intermediate(Pre-Engineering)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2016</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Contrary to popular belief. Ut
+                                                                tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row row--40">
+
+                                        <!-- Start Single Progressbar  -->
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="progress-wrapper">
+                                                <div class="content">
+                                                    <span class="subtitle">Features</span>
+                                                    <h4 class="maintitle">Development Skills</h4>
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">HTML</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">90%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Bootstrap</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">85%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">JQuery</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">65%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                     <!-- Start Single Progress Charts -->
+                                                     <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Python</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">65%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                     <!-- Start Single Progress Charts -->
+                                                     <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">PHP</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">80%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                     <!-- Start Single Progress Charts -->
+                                                     <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Wordpress</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">85%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Progressbar  -->
+
+                                        <!-- Start Single Progressbar  -->
+                                        <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
+                                            <div class="progress-wrapper">
+                                                <div class="content">
+                                                    <span class="subtitle" style="color: #212529;">Features</span>
+                                                    <h4 class="maintitle" style="color: #212529;">Development Skill</h4>
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">CSS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">85%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">JavaScript</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">70%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">React JS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">50%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Laravel</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">70%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Shopify</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
+                                                            class="percent-label">75%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Progressbar  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2019 - 2022</span>
+                                                <h4 class="maintitle">Job Experience</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Senior Web Developer</h4>
+                                                                    <span>Out Origin</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>Present</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">The education should be very
+                                                                interactual. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                        <!-- Start Skill List Area 2nd  -->
+                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                            <div class="content">
+                                                <span class="subtitle" style="color: #212529;">2007 - 2010</span>
+                                                <h4 class="maintitle" style="color: #212529;">Job Experience</h4>
+                                                <div class="experience-list experience-list-mob">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Web Developer</h4>
+                                                                    <span>Pakish Group</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2019</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Contrary to popular belief. Ut
+                                                                tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="interview-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle" style="color: #212529;">2007 - 2010</span>
+                                                <h4 class="maintitle">Certifications</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Ecommerce National CBT Certificate from NAVTTC(Web Development)</h4>
+                                                                    <span>Memon Industrial & Technical Institute Karachi(MITI)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2019</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">The education should be very
+                                                                interactual. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>CISCO Networking Academy</h4>
+                                                                    <span>Saylani Mass Training & Job Creation Program(SMIT)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2019</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Maecenas finibus nec sem ut
+                                                                imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Certificate of Appreciation</h4>
+                                                                    <span>Out Origin</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2021</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Maecenas finibus nec sem ut
+                                                                imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                     <!-- Start Single List  -->
+                                                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>English Language</h4>
+                                                                    <span>IQ PASS EDUCATION</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2012</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Maecenas finibus nec sem ut
+                                                                imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                        <!-- Start Skill List Area 2nd  -->
+                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                            <div class="content">
+                                                <span class="subtitle" style="color: #212529;">2007 - 2010</span>
+                                                <h4 class="maintitle" style="color: #212529;">Job Experience</h4>
+                                                <div class="experience-list experience-list-mob">
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Web Designing & Development</h4>
+                                                                    <span>MITI</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2018</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Contrary to popular belief. Ut
+                                                                tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                     <!-- Start Single List  -->
+                                                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>PCAP - Programming Essentials in Python</h4>
+                                                                    <span>Saylani Mass Training & Job Creation Program(SMIT)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2020</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Contrary to popular belief. Ut
+                                                                tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>ComTech FYP Exhibition</h4>
+                                                                    <span>Benazir Bhutto Shaheed University Lyari Karachi</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>2021</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Generate Lorem Ipsum which looks. Ut
+                                                                tincidunt est ac dolor aliquam sodales.
+                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                                                mauris hendrerit ante.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->                               
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Resume Area -->
+        <!-- Start Testimonia Area  -->
+        <div class="rn-testimonial-area rn-section-gap section-separator" id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">What Clients Say About Me</span>
+                            <h2 class="title">Testimonials</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-activation testimonial-pb mb--30">
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <!-- <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/testimonial/final-home--1st.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">Rainbow-Themes</span>
+                                            <h3 class="title">Nevine Acotanza</h3>
+                                            <span class="designation">Chief Operating Officer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Limbersport</h3>
+                                                <span class="date">United Kingdom - via Fiverr</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            Great work that was super quick and accurate doing some website fixes for me! Very communicative, accurate and quick.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <!-- <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/testimonial/final-home--2nd.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">Bound - Trolola</span>
+                                            <h3 class="title">Jone Duone Joe</h3>
+                                            <span class="designation">Operating Officer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Jeromero</h3>
+                                                <span class="date">South Africa - via Fiverr</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            Excellent delivery once again. Recommended. Will be back for more. Thanks again.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <!-- <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/testimonial/final-home--3rd.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">Glassfisom</span>
+                                            <h3 class="title">Nevine Dhawan</h3>
+                                            <span class="designation">CEO Of Officer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Markpearce</h3>
+                                                <span class="date">United Kingdom - via Fiverr</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            I'm very happy with the service that has been provided both skill and communication, from what I can see at this time everything works as it should. Recommended seller. Thank You, Mark.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <!-- <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/testimonial/final-home--4th.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">NCD - Design</span>
+                                            <h3 class="title">Mevine Thoda</h3>
+                                            <span class="designation">Marketing Officer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Lucases</h3>
+                                                <span class="date">United States - via Fiverr</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            The best very responsible and caring thanks for the wonderful service.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+
+                            <!-- Start Single testiminail -->
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <!-- <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/testimonial/final-home--5th.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">Default name</span>
+                                            <h3 class="title">Davei Luace</h3>
+                                            <span class="designation">Chief Operating Manager</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Stingo</h3>
+                                                <span class="date">United Kingdom - via Fiverr</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            Quick response, delivered exactly as I wanted, will always recommend this seller.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+
+
+
+                             <!-- Start Single testiminail -->
+                             <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                <div class="inner">
+                                    <!-- <div class="card-info">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/images/testimonial/final-home--4th.png" alt="Testimonial-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="subtitle mt--10">NCD - Design</span>
+                                            <h3 class="title">Mevine Thoda</h3>
+                                            <span class="designation">Marketing Officer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="card-description">
+                                        <div class="title-area">
+                                            <div class="title-info">
+                                                <h3 class="title">Kanan</h3>
+                                                <span class="date">Azerbaijan - via Fiverr</span>
+                                            </div>
+                                            <div class="rating">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                                <img src="assets/images/icons/rating.png" alt="rating-image">
+                                            </div>
+                                        </div>
+                                        <div class="seperator"></div>
+                                        <p class="discription">
+                                            Very experienced seller, was really plesant to work with. Suggesting to everyone. Thank You!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single testiminail -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonia Area  -->
+
+   
+
+        <!-- Start Contact section -->
+        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Contact</span>
+                            <h2 class="title">Contact With Me</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+                    <div class="col-lg-5">
+                        <div class="contact-about-area">
+                            <div class="thumbnail">
+                                <img src="assets/images/contact/contact1.png" alt="contact-img">
+                            </div>
+                            <div class="title-area">
+                                <h4 class="title">Omais Ahmed</h4>
+                                <span>Software Engineer</span>
+                            </div>
+                            <div class="description">
+                                <p>I am available for freelance work. Connect with me via email and call in to my account.
+                                </p>
+                                <span class="phone">Phone: <a href="tel:+923102135074">+923102135074</a></span>
+                                <span class="mail">Email: <a href="mailto:decentomais90@gmail.com">decentomais90@gmail.com</a></span>
+                            </div>
+                            <div class="social-area">
+                                <div class="name">FIND WITH ME</div>
+                                <div class="social-icone">
+                                    <a href="https://www.facebook.com/omais.ahmed.52/"><i data-feather="facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/omais-ahmed-679a0b144/"><i data-feather="linkedin"></i></a>
+                                    <a href="https://www.instagram.com/om_brogrammer/"><i data-feather="instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos-delay="600" class="col-lg-7 contact-input">
+                        <div class="contact-form-wrapper">
+                            <div class="introduce">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form">
+                                    <input type="hidden" name="contact_number">
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-name">Your Name</label>
+                                            <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-phone">Phone Number</label>
+                                            <input class="form-control" name="contact-phone" id="contact-phone" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-email">Email</label>
+                                            <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="subject">subject</label>
+                                            <input class="form-control form-control-sm" id="subject" name="subject" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-message">Your Message</label>
+                                            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button name="submit" type="submit" id="submit" class="rn-btn">
+                                            <span>SEND MESSAGE</span>
+                                            <i data-feather="arrow-right"></i>
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contuct section -->
+
+       
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
+
+
+
+    </main>
+
+    <!-- Start Footer Area -->
+    <div class="rn-footer-area rn-section-gap section-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo-vertical.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <p class="description mt--30">© 2022. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
