@@ -14599,3 +14599,7 @@ body.white-version {
       margin-top: -145px;
   }
   }
+
+  .slide .thumbnail::before{
+    display: none;
+  }
