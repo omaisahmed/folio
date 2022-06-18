@@ -14603,3 +14603,7 @@ body.white-version {
   .slide .thumbnail::before{
     display: none;
   }
+
+  .slide .content .inner {
+    margin-bottom: 50px;
+}
