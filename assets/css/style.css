@@ -14607,3 +14607,6 @@ body.white-version {
   .slide .content .inner {
     margin-bottom: 50px;
 }
+.testimonial .inner .card-description::before{
+  display: none;
+}
